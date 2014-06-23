@@ -35,7 +35,8 @@ wa = -ww[0] / ww[1]
 wyy = wa * xx - wclf.intercept_[0] / ww[1]
 
 print X
-
+print xx
+print yy
 # plot separating hyperplanes and samples
 h0 = pl.plot(xx, yy, 'k-', label='no weights')
 h1 = pl.plot(xx, wyy, 'k--', label='with weights')
